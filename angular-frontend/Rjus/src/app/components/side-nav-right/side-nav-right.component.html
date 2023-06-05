@@ -1,0 +1,20 @@
+
+<div style="height:100% ;width:100%;">
+<div class="cart" >
+    <p aria-setsize="10PX"  style="margin-left:24%;margin-top: 20%;">YOUR CART DETAILS </p>
+</div>
+<div><button class="clear_cart">clear cart</button></div>
+<div class="container" [hidden]="hid">
+    <div *ngFor="let i of a"  class="grid"> 
+   <div> <img src="assets/images/learning.jpg" class="course-image" ></div>
+   <div style="margin-left:14%;margin-top: -30px;width: 100%;"><h5>{{i.courseName}}</h5>
+    <h4 style="color: red;margin-left:60% ;margin-top:-10% ; height: fit-content;width: fit-content;">PRICE <mark>${{i.discountedPrice}}/-</mark></h4> 
+    
+</div>
+    
+</div>
+<div class="h1">
+<h4 >Total cart values &nbsp; <mark style="font-size: larger;font-style: italic;">${{totalCartValue}}/-</mark></h4>
+</div>
+
+</div>

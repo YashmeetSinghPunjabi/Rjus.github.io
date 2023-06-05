@@ -1,0 +1,47 @@
+<img src="/assets/images/1.webp" class="poster-image">
+
+<div class="search-box"><input type="text"  placeholder="Search courses" (input)="searchBox($event)" style="background-color:white"></div>
+<div class="price-range">
+    <select (change)="sort($event)"  >
+        <option >Sort-Price</option>
+        <option value="0">High-Low</option>
+        <option value="1">  Low-High</option>
+    </select>
+</div>
+<div class="container">
+    <div *ngFor="let item of l " class="course1" >
+    <div class="course-container">
+        <div class="course-alligment">
+           <img src="assets/images/learning.jpg" class="course-image" >
+        
+        </div>
+        <div class="course-alligment">
+            <p class="course-title">{{item.courseName}}</p>
+            <div class="course-tag">React</div>
+        </div>
+        <div class="course-alligment">
+            <h5><i>{{item.author}}</i></h5>
+        </div>
+        <div class="course-alligment">
+            <h5><del>${{item.price}}/-</del></h5>
+        </div>
+        <div class="course-alligment">
+            <h5><mark>${{item.discountedPrice}}/-</mark></h5>
+        </div>
+        <div class="course-alligment">  
+            <br><button class="cart-button">Add to Wishlist</button>      
+        </div>
+        <div class="course-alligment">
+            
+         <img src="/assets/images/shopping-cart.png" class="cart-images" (click)="addToCart(item)" >
+       </div>
+        <div class="course-alligment">
+            
+           <a routerLink="/course-description" > <img src="/assets/images/right-arrow.png" class="cart-images">
+           </a>       </div>
+      
+    </div>
+    
+    </div>
+
+</div>

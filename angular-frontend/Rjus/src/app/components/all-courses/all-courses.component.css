@@ -1,0 +1,87 @@
+.container{
+    height: 100%;
+    width: 100%;
+    margin-top:4%;
+    background-color: white;
+    
+}
+.course1{
+    box-shadow: 0px 3px 6px #00000029;
+    border:8px solid #f4f4f4;
+    border-radius: 0px 0px 4px 4px;
+    opacity: 1;
+    background:#ffffff 0% 0% no-repeat padding-box;
+    height: 80px;
+    
+}
+.course-container{
+   height: 100%;
+   width: 95%;
+   column-gap: 1%;
+    display :grid;
+    grid-template-columns: 10% 25% 10% 10% 14% 16% 5% 5%;
+    grid-template-rows: 100%;
+}
+.course-alligment{
+ 
+    background-color: white;
+    
+
+}
+.course-title{
+    text-align: left;
+    font: normal normal 600 16px/16px Montserrat;
+    letter-spacing: 0px;
+    color: #080808;
+    opacity: 1;
+}
+.course-image{
+    
+    
+    padding-top:1px;
+    padding-left:0px;
+    width:60px;
+    height: 80px;
+    object-fit: cover;
+    
+}
+.course-tag{
+    background-color: orangered;
+    position: absolute;
+    width: fit-content;
+  
+}
+.cart-button{
+    color: black;
+    background-color: lightcoral;
+    
+}
+.cart-images
+{
+ 
+    position: absolute ;
+    padding-top:15px;
+    padding-left:0px;
+    width:25px;
+    height: 25px;
+    object-fit: cover;
+}
+.poster-image
+{
+    margin-top: 5%;
+    height: 20%;
+    width: 100%;
+}
+.search-box
+{
+    height: fit-content ;
+    width: fit-content;
+    margin-top: 1%;
+    margin-left: 80%;
+    
+}
+.price-range{
+    position: absolute;
+    margin-top: -1%;
+    margin-left: 40%;
+}

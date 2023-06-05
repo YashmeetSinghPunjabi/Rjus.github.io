@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+.container
+{
+
+height: 100% ;
+width: 100% ;
+
+display: grid;
+background-color:white;
+position: absolute;
+grid-template-columns:5% 60% 30%  ;
+grid-template-rows: 5%  88% 8%;
+column-gap: 10px;
+
+}
+.item1{
+background-color: pink;
+
+}
+.header{
+
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    
+    border-width: 5px;
+    }
+.footer{
+    
+    position: sticky;
+    background-color: lightblue;
+    grid-column-start: 1; 
+    grid-column-end:5;   
+    
+}
+.side-nev-left{
+    background-color: white;
+    
+    
+       
+}
+.side-nev-right{
+    background-color: white;
+}
+.all-courses{
+
+     background-color: white;
+}

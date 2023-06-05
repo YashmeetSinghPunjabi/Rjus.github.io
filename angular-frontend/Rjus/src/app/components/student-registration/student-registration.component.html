@@ -1,0 +1,34 @@
+<div class="container">
+<div class="form"> 
+<form [formGroup]="studentRegistrationForm" (ngSubmit)="onSubmit()" >
+
+    <label for="name"> Name: </label>
+    <input id="name" type="text" formControlName="Name">
+  <br>
+  <br>
+    <label for="Email">Email </label>
+    <input id="Email" type="text" formControlName="Email"><br><br>
+    <label for="address">Address </label>
+    <input id="address" type="address" formControladdress="address"><br><br>
+
+    <label for="ContactNo">Contact No. </label>
+    <input id="ContactNo" type="ContactNo" formControlName="ContactNo">
+    <br><br>
+    <label for="UserName">UserName </label>
+    <input id="UserName" type="UserName" formControlName="UserName">
+    <br><br>
+    <label for="Password">Password </label>
+    <input id="Password" type="password" formControlName="Password">
+    
+    <br><br>
+    <label  for="female">Female</label>
+    <input id="female" type="radio"  formControlGender="female">
+    <label  for="female">Male</label>
+    <input id="Male" type="radio"  formControlGender="Gender">
+    <br><br>
+    <button type="submit" >Submit</button>
+    
+  
+  </form>
+  </div>
+</div>
